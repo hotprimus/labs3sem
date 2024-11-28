@@ -1,0 +1,10 @@
+/home/petr/Documents/labs3sem/laba1/build/CMakeFiles/functional_tests.dir
+/home/petr/Documents/labs3sem/laba1/build/CMakeFiles/stress_tests.dir
+/home/petr/Documents/labs3sem/laba1/build/CMakeFiles/SmartListTests.dir
+/home/petr/Documents/labs3sem/laba1/build/CMakeFiles/ui_app.dir
+/home/petr/Documents/labs3sem/laba1/build/CMakeFiles/edit_cache.dir
+/home/petr/Documents/labs3sem/laba1/build/CMakeFiles/rebuild_cache.dir
+/home/petr/Documents/labs3sem/laba1/build/CMakeFiles/functional_tests_autogen.dir
+/home/petr/Documents/labs3sem/laba1/build/CMakeFiles/stress_tests_autogen.dir
+/home/petr/Documents/labs3sem/laba1/build/CMakeFiles/SmartListTests_autogen.dir
+/home/petr/Documents/labs3sem/laba1/build/CMakeFiles/ui_app_autogen.dir

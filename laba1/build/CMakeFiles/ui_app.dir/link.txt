@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file,CMakeFiles/ui_app.dir/link.d CMakeFiles/ui_app.dir/ui_app_autogen/mocs_compilation.cpp.o CMakeFiles/ui_app.dir/src/main.cpp.o CMakeFiles/ui_app.dir/src/mainwindow.cpp.o -o ui_app  /usr/lib/libQt5Widgets.so.5.15.15 /usr/lib/libQt5Gui.so.5.15.15 /usr/lib/libQt5Core.so.5.15.15

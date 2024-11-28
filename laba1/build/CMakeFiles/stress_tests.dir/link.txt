@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file,CMakeFiles/stress_tests.dir/link.d CMakeFiles/stress_tests.dir/stress_tests_autogen/mocs_compilation.cpp.o CMakeFiles/stress_tests.dir/tests/stress_tests.cpp.o -o stress_tests
