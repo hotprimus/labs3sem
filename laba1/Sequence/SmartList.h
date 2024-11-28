@@ -51,9 +51,7 @@ public:
         other.size = 0;
     }
 
-    ~SmartList() {
-        destroyList();
-    }
+    
 
     const T &getFirst() const {
         if (!first) {
@@ -125,7 +123,7 @@ public:
             prepend(value);
             return;
         }      
-        checkIndex(index - 1);
+        checkIndex(index);
         shared_ptr<Node<T>> temp = first;
         for (int i = 0; i < index - 1; ++i) {
             temp = temp->right;

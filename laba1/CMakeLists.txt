@@ -31,6 +31,10 @@ add_executable(SmartListTests
 )
 target_include_directories(SmartListTests PRIVATE "${CMAKE_SOURCE_DIR}/include")
 
+add_executable(SmartListSequenceTests
+    tests/SmartListSequenceTests.cpp
+)
+target_include_directories(SmartListSequenceTests PRIVATE "${CMAKE_SOURCE_DIR}/include")
 
 
 add_executable(ui_app

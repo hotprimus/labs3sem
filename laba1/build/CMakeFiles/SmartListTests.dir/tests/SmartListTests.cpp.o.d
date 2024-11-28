@@ -13,26 +13,15 @@ CMakeFiles/SmartListTests.dir/tests/SmartListTests.cpp.o: \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
  /usr/include/c++/14.2.1/pstl/pstl_config.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h \
- /usr/include/c++/14.2.1/bits/version.h /usr/include/c++/14.2.1/atomic \
- /usr/include/c++/14.2.1/bits/atomic_base.h /usr/include/c++/14.2.1/new \
+ /usr/include/c++/14.2.1/bits/version.h /usr/include/c++/14.2.1/stdexcept \
+ /usr/include/c++/14.2.1/exception \
  /usr/include/c++/14.2.1/bits/exception.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
- /usr/include/bits/types.h /usr/include/bits/typesizes.h \
- /usr/include/bits/time64.h /usr/include/bits/wchar.h \
- /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h \
- /usr/include/c++/14.2.1/bits/atomic_lockfree_defines.h \
- /usr/include/c++/14.2.1/bits/move.h /usr/include/c++/14.2.1/type_traits \
- /home/petr/Documents/labs3sem/laba1/tests/../Sequence/../include/weak_ptr.h \
- /home/petr/Documents/labs3sem/laba1/tests/../Sequence/../include/control_block.h \
- /home/petr/Documents/labs3sem/laba1/tests/../Sequence/../include/unique_ptr.h \
- /usr/include/c++/14.2.1/stdexcept /usr/include/c++/14.2.1/exception \
  /usr/include/c++/14.2.1/bits/exception_ptr.h \
  /usr/include/c++/14.2.1/bits/exception_defines.h \
  /usr/include/c++/14.2.1/bits/cxxabi_init_exception.h \
  /usr/include/c++/14.2.1/typeinfo \
- /usr/include/c++/14.2.1/bits/hash_bytes.h \
+ /usr/include/c++/14.2.1/bits/hash_bytes.h /usr/include/c++/14.2.1/new \
+ /usr/include/c++/14.2.1/bits/move.h /usr/include/c++/14.2.1/type_traits \
  /usr/include/c++/14.2.1/bits/nested_exception.h \
  /usr/include/c++/14.2.1/string \
  /usr/include/c++/14.2.1/bits/requires_hosted.h \
@@ -40,10 +29,11 @@ CMakeFiles/SmartListTests.dir/tests/SmartListTests.cpp.o: \
  /usr/include/c++/14.2.1/bits/memoryfwd.h \
  /usr/include/c++/14.2.1/bits/char_traits.h \
  /usr/include/c++/14.2.1/bits/postypes.h /usr/include/c++/14.2.1/cwchar \
- /usr/include/wchar.h /usr/include/bits/floatn.h \
- /usr/include/bits/floatn-common.h \
+ /usr/include/wchar.h /usr/include/bits/libc-header-start.h \
+ /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
- /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
+ /usr/include/bits/wchar.h /usr/include/bits/types/wint_t.h \
+ /usr/include/bits/types/mbstate_t.h \
  /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
  /usr/include/bits/types/FILE.h /usr/include/bits/types/locale_t.h \
  /usr/include/bits/types/__locale_t.h \
@@ -57,7 +47,9 @@ CMakeFiles/SmartListTests.dir/tests/SmartListTests.cpp.o: \
  /usr/include/c++/14.2.1/clocale /usr/include/locale.h \
  /usr/include/bits/locale.h /usr/include/c++/14.2.1/iosfwd \
  /usr/include/c++/14.2.1/cctype /usr/include/ctype.h \
- /usr/include/bits/endian.h /usr/include/bits/endianness.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/bits/time64.h /usr/include/bits/endian.h \
+ /usr/include/bits/endianness.h \
  /usr/include/c++/14.2.1/bits/ostream_insert.h \
  /usr/include/c++/14.2.1/bits/cxxabi_forced.h \
  /usr/include/c++/14.2.1/bits/stl_iterator_base_funcs.h \
@@ -92,10 +84,11 @@ CMakeFiles/SmartListTests.dir/tests/SmartListTests.cpp.o: \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
  /usr/include/sys/types.h /usr/include/bits/types/clock_t.h \
  /usr/include/bits/types/clockid_t.h /usr/include/bits/types/time_t.h \
- /usr/include/bits/types/timer_t.h /usr/include/endian.h \
- /usr/include/bits/byteswap.h /usr/include/bits/uintn-identity.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/types/sigset_t.h /usr/include/bits/types/__sigset_t.h \
+ /usr/include/bits/types/timer_t.h /usr/include/bits/stdint-intn.h \
+ /usr/include/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/bits/uintn-identity.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/types/sigset_t.h \
+ /usr/include/bits/types/__sigset_t.h \
  /usr/include/bits/types/struct_timeval.h \
  /usr/include/bits/types/struct_timespec.h \
  /usr/include/bits/pthreadtypes.h /usr/include/bits/thread-shared-types.h \
@@ -117,10 +110,18 @@ CMakeFiles/SmartListTests.dir/tests/SmartListTests.cpp.o: \
  /usr/include/c++/14.2.1/bits/memory_resource.h \
  /usr/include/c++/14.2.1/bits/uses_allocator.h \
  /usr/include/c++/14.2.1/bits/uses_allocator_args.h \
- /usr/include/c++/14.2.1/tuple /usr/include/c++/14.2.1/cassert \
- /usr/include/assert.h /usr/include/c++/14.2.1/iostream \
- /usr/include/c++/14.2.1/ostream /usr/include/c++/14.2.1/ios \
- /usr/include/c++/14.2.1/bits/ios_base.h \
+ /usr/include/c++/14.2.1/tuple /usr/include/c++/14.2.1/atomic \
+ /usr/include/c++/14.2.1/bits/atomic_base.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
+ /usr/include/bits/stdint-least.h \
+ /usr/include/c++/14.2.1/bits/atomic_lockfree_defines.h \
+ /home/petr/Documents/labs3sem/laba1/tests/../Sequence/../include/weak_ptr.h \
+ /home/petr/Documents/labs3sem/laba1/tests/../Sequence/../include/control_block.h \
+ /home/petr/Documents/labs3sem/laba1/tests/../Sequence/../include/unique_ptr.h \
+ /usr/include/c++/14.2.1/cassert /usr/include/assert.h \
+ /usr/include/c++/14.2.1/iostream /usr/include/c++/14.2.1/ostream \
+ /usr/include/c++/14.2.1/ios /usr/include/c++/14.2.1/bits/ios_base.h \
  /usr/include/c++/14.2.1/ext/atomicity.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \

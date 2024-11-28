@@ -156,6 +156,19 @@ SmartListTests/fast:
 .PHONY : SmartListTests/fast
 
 #=============================================================================
+# Target rules for targets named SmartListSequenceTests
+
+# Build rule for target.
+SmartListSequenceTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SmartListSequenceTests
+.PHONY : SmartListSequenceTests
+
+# fast build rule for target.
+SmartListSequenceTests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartListSequenceTests.dir/build.make CMakeFiles/SmartListSequenceTests.dir/build
+.PHONY : SmartListSequenceTests/fast
+
+#=============================================================================
 # Target rules for targets named ui_app
 
 # Build rule for target.
@@ -208,6 +221,19 @@ SmartListTests_autogen/fast:
 .PHONY : SmartListTests_autogen/fast
 
 #=============================================================================
+# Target rules for targets named SmartListSequenceTests_autogen
+
+# Build rule for target.
+SmartListSequenceTests_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SmartListSequenceTests_autogen
+.PHONY : SmartListSequenceTests_autogen
+
+# fast build rule for target.
+SmartListSequenceTests_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartListSequenceTests_autogen.dir/build.make CMakeFiles/SmartListSequenceTests_autogen.dir/build
+.PHONY : SmartListSequenceTests_autogen/fast
+
+#=============================================================================
 # Target rules for targets named ui_app_autogen
 
 # Build rule for target.
@@ -219,6 +245,30 @@ ui_app_autogen: cmake_check_build_system
 ui_app_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_app_autogen.dir/build.make CMakeFiles/ui_app_autogen.dir/build
 .PHONY : ui_app_autogen/fast
+
+SmartListSequenceTests_autogen/mocs_compilation.o: SmartListSequenceTests_autogen/mocs_compilation.cpp.o
+.PHONY : SmartListSequenceTests_autogen/mocs_compilation.o
+
+# target to build an object file
+SmartListSequenceTests_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartListSequenceTests.dir/build.make CMakeFiles/SmartListSequenceTests.dir/SmartListSequenceTests_autogen/mocs_compilation.cpp.o
+.PHONY : SmartListSequenceTests_autogen/mocs_compilation.cpp.o
+
+SmartListSequenceTests_autogen/mocs_compilation.i: SmartListSequenceTests_autogen/mocs_compilation.cpp.i
+.PHONY : SmartListSequenceTests_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+SmartListSequenceTests_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartListSequenceTests.dir/build.make CMakeFiles/SmartListSequenceTests.dir/SmartListSequenceTests_autogen/mocs_compilation.cpp.i
+.PHONY : SmartListSequenceTests_autogen/mocs_compilation.cpp.i
+
+SmartListSequenceTests_autogen/mocs_compilation.s: SmartListSequenceTests_autogen/mocs_compilation.cpp.s
+.PHONY : SmartListSequenceTests_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+SmartListSequenceTests_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartListSequenceTests.dir/build.make CMakeFiles/SmartListSequenceTests.dir/SmartListSequenceTests_autogen/mocs_compilation.cpp.s
+.PHONY : SmartListSequenceTests_autogen/mocs_compilation.cpp.s
 
 SmartListTests_autogen/mocs_compilation.o: SmartListTests_autogen/mocs_compilation.cpp.o
 .PHONY : SmartListTests_autogen/mocs_compilation.o
@@ -340,6 +390,30 @@ stress_tests_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stress_tests.dir/build.make CMakeFiles/stress_tests.dir/stress_tests_autogen/mocs_compilation.cpp.s
 .PHONY : stress_tests_autogen/mocs_compilation.cpp.s
 
+tests/SmartListSequenceTests.o: tests/SmartListSequenceTests.cpp.o
+.PHONY : tests/SmartListSequenceTests.o
+
+# target to build an object file
+tests/SmartListSequenceTests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartListSequenceTests.dir/build.make CMakeFiles/SmartListSequenceTests.dir/tests/SmartListSequenceTests.cpp.o
+.PHONY : tests/SmartListSequenceTests.cpp.o
+
+tests/SmartListSequenceTests.i: tests/SmartListSequenceTests.cpp.i
+.PHONY : tests/SmartListSequenceTests.i
+
+# target to preprocess a source file
+tests/SmartListSequenceTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartListSequenceTests.dir/build.make CMakeFiles/SmartListSequenceTests.dir/tests/SmartListSequenceTests.cpp.i
+.PHONY : tests/SmartListSequenceTests.cpp.i
+
+tests/SmartListSequenceTests.s: tests/SmartListSequenceTests.cpp.s
+.PHONY : tests/SmartListSequenceTests.s
+
+# target to generate assembly for a file
+tests/SmartListSequenceTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartListSequenceTests.dir/build.make CMakeFiles/SmartListSequenceTests.dir/tests/SmartListSequenceTests.cpp.s
+.PHONY : tests/SmartListSequenceTests.cpp.s
+
 tests/SmartListTests.o: tests/SmartListTests.cpp.o
 .PHONY : tests/SmartListTests.o
 
@@ -444,14 +518,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... SmartListSequenceTests_autogen"
 	@echo "... SmartListTests_autogen"
 	@echo "... functional_tests_autogen"
 	@echo "... stress_tests_autogen"
 	@echo "... ui_app_autogen"
+	@echo "... SmartListSequenceTests"
 	@echo "... SmartListTests"
 	@echo "... functional_tests"
 	@echo "... stress_tests"
 	@echo "... ui_app"
+	@echo "... SmartListSequenceTests_autogen/mocs_compilation.o"
+	@echo "... SmartListSequenceTests_autogen/mocs_compilation.i"
+	@echo "... SmartListSequenceTests_autogen/mocs_compilation.s"
 	@echo "... SmartListTests_autogen/mocs_compilation.o"
 	@echo "... SmartListTests_autogen/mocs_compilation.i"
 	@echo "... SmartListTests_autogen/mocs_compilation.s"
@@ -467,6 +546,9 @@ help:
 	@echo "... stress_tests_autogen/mocs_compilation.o"
 	@echo "... stress_tests_autogen/mocs_compilation.i"
 	@echo "... stress_tests_autogen/mocs_compilation.s"
+	@echo "... tests/SmartListSequenceTests.o"
+	@echo "... tests/SmartListSequenceTests.i"
+	@echo "... tests/SmartListSequenceTests.s"
 	@echo "... tests/SmartListTests.o"
 	@echo "... tests/SmartListTests.i"
 	@echo "... tests/SmartListTests.s"

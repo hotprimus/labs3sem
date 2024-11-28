@@ -16,6 +16,16 @@ class weak_ptr {
 private:
     ControlBlock<T>* control;
 
+    void release(){
+        if (control) {
+            if (control->weak_count.fetch_sub(1, std::memory_order_acq_rel) == 1) {
+                if (control->shared_count.load(std::memory_order_acquire) == 0) {
+                    delete control;
+                }
+            }
+        }
+    }
+
 public:
     constexpr weak_ptr() noexcept : control(nullptr) {}
 
@@ -35,15 +45,11 @@ public:
         other.control = nullptr;
     }
 
+    
+
     weak_ptr& operator=(const weak_ptr& other) noexcept {
         if (this != &other) {
-            if (control) {
-                if (control->weak_count.fetch_sub(1, std::memory_order_acq_rel) == 1) {
-                    if (control->shared_count.load(std::memory_order_acquire) == 0) {
-                        delete control;
-                    }
-                }
-            }
+            release();
             control = other.control;
             if (control) {
                 control->weak_count.fetch_add(1, std::memory_order_relaxed);

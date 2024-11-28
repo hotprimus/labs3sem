@@ -1,6 +1,7 @@
 #pragma once 
 
 #include <cstddef>
+#include <stdexcept> 
 #include <atomic>
 #include "weak_ptr.h"
 #include "control_block.h"
@@ -47,7 +48,6 @@ public:
 
     explicit shared_ptr(const weak_ptr<T>& wp) noexcept;
 
-    // Деструктор
     ~shared_ptr() {
         release();
     }
@@ -70,8 +70,18 @@ public:
         return *this;
     }
 
-    T& operator*() const { return *(control->ptr); }
-    T* operator->() const noexcept { return control ? control->ptr : nullptr; }
+    T& operator*() const { 
+        if (control -> ptr != nullptr){
+            return *(control->ptr); 
+        }
+        throw std::runtime_error("Dereferencing null unique_ptr");
+    }
+    T* operator->() const noexcept { 
+        if (control -> ptr != nullptr){
+            return control ? control->ptr : nullptr; 
+        }
+        throw std::runtime_error("Dereferencing null unique_ptr");
+    }
 
     T* get() const noexcept { return control ? control->ptr : nullptr; }
 
@@ -88,15 +98,14 @@ public:
     }
 
     void reset(T* ptr = nullptr) noexcept {
-    release(); 
-    if (ptr) {
-
-        control = new ControlBlock<T>(ptr);
-    } else {
-
-        control = nullptr;
+        release(); 
+        if (ptr) {
+            control = new ControlBlock<T>(ptr);
+        } 
+        else {
+            control = nullptr;
+        }
     }
-}
     friend class weak_ptr<T>;   
 };
 

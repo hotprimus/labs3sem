@@ -148,6 +148,7 @@
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
+		"/home/petr/Documents/labs3sem/laba1/build/SmartListSequenceTests_autogen/mocs_compilation.cpp",
 		"/home/petr/Documents/labs3sem/laba1/build/SmartListTests_autogen/mocs_compilation.cpp",
 		"/home/petr/Documents/labs3sem/laba1/build/functional_tests_autogen/mocs_compilation.cpp",
 		"/home/petr/Documents/labs3sem/laba1/build/stress_tests_autogen/mocs_compilation.cpp"

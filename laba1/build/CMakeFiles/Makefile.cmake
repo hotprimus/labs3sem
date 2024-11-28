@@ -96,6 +96,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/functional_tests_autogen.dir/AutogenInfo.json"
   "CMakeFiles/stress_tests_autogen.dir/AutogenInfo.json"
   "CMakeFiles/SmartListTests_autogen.dir/AutogenInfo.json"
+  "CMakeFiles/SmartListSequenceTests_autogen.dir/AutogenInfo.json"
   "CMakeFiles/ui_app_autogen.dir/AutogenInfo.json"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
@@ -105,9 +106,11 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/functional_tests.dir/DependInfo.cmake"
   "CMakeFiles/stress_tests.dir/DependInfo.cmake"
   "CMakeFiles/SmartListTests.dir/DependInfo.cmake"
+  "CMakeFiles/SmartListSequenceTests.dir/DependInfo.cmake"
   "CMakeFiles/ui_app.dir/DependInfo.cmake"
   "CMakeFiles/functional_tests_autogen.dir/DependInfo.cmake"
   "CMakeFiles/stress_tests_autogen.dir/DependInfo.cmake"
   "CMakeFiles/SmartListTests_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/SmartListSequenceTests_autogen.dir/DependInfo.cmake"
   "CMakeFiles/ui_app_autogen.dir/DependInfo.cmake"
   )
