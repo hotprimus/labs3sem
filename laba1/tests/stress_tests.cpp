@@ -21,21 +21,19 @@ void testSmartPointers(int numObjects) {
 
     auto start = std::chrono::high_resolution_clock::now();
 
-    // Создание custom shared_ptr
     std::vector<shared_ptr<TestObject>> spVec;
     spVec.reserve(numObjects);
     for(int i = 0; i < numObjects; ++i) {
         spVec.emplace_back(shared_ptr<TestObject>(new TestObject(i)));
     }
 
-    // Создание custom unique_ptr
+
     std::vector<unique_ptr<TestObject>> upVec;
     upVec.reserve(numObjects);
     for(int i = 0; i < numObjects; ++i) {
         upVec.emplace_back(unique_ptr<TestObject>(new TestObject(i)));
     }
 
-    // Создание custom weak_ptr
     std::vector<weak_ptr<TestObject>> wpVec;
     wpVec.reserve(numObjects);
     for(int i = 0; i < numObjects; ++i) {
@@ -52,15 +50,13 @@ void testRawPointers(int numObjects) {
     std::cout << "Test with " << numObjects << " objects using raw pointers.\n";
 
     auto start = std::chrono::high_resolution_clock::now();
-
-    // Создание сырых указателей
+    
     std::vector<TestObject*> ptrVec;
     ptrVec.reserve(numObjects);
     for(int i = 0; i < numObjects; ++i) {
         ptrVec.emplace_back(new TestObject(i));
     }
 
-    // Освобождение памяти
     for(auto ptr : ptrVec) {
         delete ptr;
     }
