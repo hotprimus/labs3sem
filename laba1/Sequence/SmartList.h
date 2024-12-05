@@ -51,8 +51,6 @@ public:
         other.size = 0;
     }
 
-    
-
     const T &getFirst() const {
         if (!first) {
             throw std::out_of_range("ListIsEmpty");

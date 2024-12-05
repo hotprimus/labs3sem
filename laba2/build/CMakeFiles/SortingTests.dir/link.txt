@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file,CMakeFiles/SortingTests.dir/link.d CMakeFiles/SortingTests.dir/SortingTests_autogen/mocs_compilation.cpp.o CMakeFiles/SortingTests.dir/tests/SortingTests.cpp.o -o SortingTests  /usr/lib/libQt6Test.so.6.8.0 /usr/lib/libQt6Core.so.6.8.0

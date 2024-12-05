@@ -1,0 +1,6 @@
+/home/petr/Documents/labs3sem/laba2/build/CMakeFiles/SortingApp.dir
+/home/petr/Documents/labs3sem/laba2/build/CMakeFiles/SortingTests.dir
+/home/petr/Documents/labs3sem/laba2/build/CMakeFiles/edit_cache.dir
+/home/petr/Documents/labs3sem/laba2/build/CMakeFiles/rebuild_cache.dir
+/home/petr/Documents/labs3sem/laba2/build/CMakeFiles/SortingApp_autogen.dir
+/home/petr/Documents/labs3sem/laba2/build/CMakeFiles/SortingTests_autogen.dir
