@@ -1,15 +1,13 @@
 #pragma once
 
-#include <QtTest>
+#include <QObject>
 
-class SortingTests : public QObject
-{
-    Q_OBJECT
+class SortingTests : public QObject {
+    Q_OBJECT 
 
 private slots:
-    void testQuickSort();
-    void testHeapSort();
-    void testShellSort();
+    void testIntegerSorting();
+    void testPersonSorting();
+    void testPersonFileSorting();
+    void benchmarkIntegerSorters();
 };
-
-

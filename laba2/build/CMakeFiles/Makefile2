@@ -63,12 +63,12 @@ CMAKE_BINARY_DIR = /home/petr/Documents/labs3sem/laba2/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/SortingApp.dir/all
+all: CMakeFiles/SortingProject.dir/all
 all: CMakeFiles/SortingTests.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/SortingApp.dir/codegen
+codegen: CMakeFiles/SortingProject.dir/codegen
 codegen: CMakeFiles/SortingTests.dir/codegen
 .PHONY : codegen
 
@@ -77,56 +77,61 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/SortingApp.dir/clean
+clean: CMakeFiles/SortingProject.dir/clean
 clean: CMakeFiles/SortingTests.dir/clean
-clean: CMakeFiles/SortingApp_autogen.dir/clean
+clean: CMakeFiles/SortingProject_autogen_timestamp_deps.dir/clean
+clean: CMakeFiles/SortingProject_autogen.dir/clean
+clean: CMakeFiles/SortingTests_autogen_timestamp_deps.dir/clean
 clean: CMakeFiles/SortingTests_autogen.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/SortingApp.dir
+# Target rules for target CMakeFiles/SortingProject.dir
 
 # All Build rule for target.
-CMakeFiles/SortingApp.dir/all: CMakeFiles/SortingApp_autogen.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp.dir/build.make CMakeFiles/SortingApp.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp.dir/build.make CMakeFiles/SortingApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/petr/Documents/labs3sem/laba2/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target SortingApp"
-.PHONY : CMakeFiles/SortingApp.dir/all
+CMakeFiles/SortingProject.dir/all: CMakeFiles/SortingProject_autogen_timestamp_deps.dir/all
+CMakeFiles/SortingProject.dir/all: CMakeFiles/SortingProject_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject.dir/build.make CMakeFiles/SortingProject.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject.dir/build.make CMakeFiles/SortingProject.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/petr/Documents/labs3sem/laba2/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target SortingProject"
+.PHONY : CMakeFiles/SortingProject.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/SortingApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/petr/Documents/labs3sem/laba2/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SortingApp.dir/all
+CMakeFiles/SortingProject.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/petr/Documents/labs3sem/laba2/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SortingProject.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/petr/Documents/labs3sem/laba2/build/CMakeFiles 0
-.PHONY : CMakeFiles/SortingApp.dir/rule
+.PHONY : CMakeFiles/SortingProject.dir/rule
 
 # Convenience name for target.
-SortingApp: CMakeFiles/SortingApp.dir/rule
-.PHONY : SortingApp
+SortingProject: CMakeFiles/SortingProject.dir/rule
+.PHONY : SortingProject
 
 # codegen rule for target.
-CMakeFiles/SortingApp.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp.dir/build.make CMakeFiles/SortingApp.dir/codegen
-.PHONY : CMakeFiles/SortingApp.dir/codegen
+CMakeFiles/SortingProject.dir/codegen: CMakeFiles/SortingProject_autogen_timestamp_deps.dir/all
+CMakeFiles/SortingProject.dir/codegen: CMakeFiles/SortingProject_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject.dir/build.make CMakeFiles/SortingProject.dir/codegen
+.PHONY : CMakeFiles/SortingProject.dir/codegen
 
 # clean rule for target.
-CMakeFiles/SortingApp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp.dir/build.make CMakeFiles/SortingApp.dir/clean
-.PHONY : CMakeFiles/SortingApp.dir/clean
+CMakeFiles/SortingProject.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject.dir/build.make CMakeFiles/SortingProject.dir/clean
+.PHONY : CMakeFiles/SortingProject.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/SortingTests.dir
 
 # All Build rule for target.
+CMakeFiles/SortingTests.dir/all: CMakeFiles/SortingTests_autogen_timestamp_deps.dir/all
 CMakeFiles/SortingTests.dir/all: CMakeFiles/SortingTests_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingTests.dir/build.make CMakeFiles/SortingTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingTests.dir/build.make CMakeFiles/SortingTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/petr/Documents/labs3sem/laba2/build/CMakeFiles --progress-num=7,8,9,10 "Built target SortingTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/petr/Documents/labs3sem/laba2/build/CMakeFiles --progress-num=8,9,10,11,12 "Built target SortingTests"
 .PHONY : CMakeFiles/SortingTests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SortingTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/petr/Documents/labs3sem/laba2/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/petr/Documents/labs3sem/laba2/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SortingTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/petr/Documents/labs3sem/laba2/build/CMakeFiles 0
 .PHONY : CMakeFiles/SortingTests.dir/rule
@@ -136,7 +141,8 @@ SortingTests: CMakeFiles/SortingTests.dir/rule
 .PHONY : SortingTests
 
 # codegen rule for target.
-CMakeFiles/SortingTests.dir/codegen:
+CMakeFiles/SortingTests.dir/codegen: CMakeFiles/SortingTests_autogen_timestamp_deps.dir/all
+CMakeFiles/SortingTests.dir/codegen: CMakeFiles/SortingTests_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingTests.dir/build.make CMakeFiles/SortingTests.dir/codegen
 .PHONY : CMakeFiles/SortingTests.dir/codegen
 
@@ -146,44 +152,106 @@ CMakeFiles/SortingTests.dir/clean:
 .PHONY : CMakeFiles/SortingTests.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/SortingApp_autogen.dir
+# Target rules for target CMakeFiles/SortingProject_autogen_timestamp_deps.dir
 
 # All Build rule for target.
-CMakeFiles/SortingApp_autogen.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp_autogen.dir/build.make CMakeFiles/SortingApp_autogen.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp_autogen.dir/build.make CMakeFiles/SortingApp_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/petr/Documents/labs3sem/laba2/build/CMakeFiles --progress-num=6 "Built target SortingApp_autogen"
-.PHONY : CMakeFiles/SortingApp_autogen.dir/all
+CMakeFiles/SortingProject_autogen_timestamp_deps.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject_autogen_timestamp_deps.dir/build.make CMakeFiles/SortingProject_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject_autogen_timestamp_deps.dir/build.make CMakeFiles/SortingProject_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/petr/Documents/labs3sem/laba2/build/CMakeFiles --progress-num= "Built target SortingProject_autogen_timestamp_deps"
+.PHONY : CMakeFiles/SortingProject_autogen_timestamp_deps.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/SortingApp_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/petr/Documents/labs3sem/laba2/build/CMakeFiles 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SortingApp_autogen.dir/all
+CMakeFiles/SortingProject_autogen_timestamp_deps.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/petr/Documents/labs3sem/laba2/build/CMakeFiles 0
-.PHONY : CMakeFiles/SortingApp_autogen.dir/rule
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SortingProject_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/petr/Documents/labs3sem/laba2/build/CMakeFiles 0
+.PHONY : CMakeFiles/SortingProject_autogen_timestamp_deps.dir/rule
 
 # Convenience name for target.
-SortingApp_autogen: CMakeFiles/SortingApp_autogen.dir/rule
-.PHONY : SortingApp_autogen
+SortingProject_autogen_timestamp_deps: CMakeFiles/SortingProject_autogen_timestamp_deps.dir/rule
+.PHONY : SortingProject_autogen_timestamp_deps
 
 # codegen rule for target.
-CMakeFiles/SortingApp_autogen.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp_autogen.dir/build.make CMakeFiles/SortingApp_autogen.dir/codegen
-.PHONY : CMakeFiles/SortingApp_autogen.dir/codegen
+CMakeFiles/SortingProject_autogen_timestamp_deps.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject_autogen_timestamp_deps.dir/build.make CMakeFiles/SortingProject_autogen_timestamp_deps.dir/codegen
+.PHONY : CMakeFiles/SortingProject_autogen_timestamp_deps.dir/codegen
 
 # clean rule for target.
-CMakeFiles/SortingApp_autogen.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp_autogen.dir/build.make CMakeFiles/SortingApp_autogen.dir/clean
-.PHONY : CMakeFiles/SortingApp_autogen.dir/clean
+CMakeFiles/SortingProject_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject_autogen_timestamp_deps.dir/build.make CMakeFiles/SortingProject_autogen_timestamp_deps.dir/clean
+.PHONY : CMakeFiles/SortingProject_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/SortingProject_autogen.dir
+
+# All Build rule for target.
+CMakeFiles/SortingProject_autogen.dir/all: CMakeFiles/SortingProject_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject_autogen.dir/build.make CMakeFiles/SortingProject_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject_autogen.dir/build.make CMakeFiles/SortingProject_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/petr/Documents/labs3sem/laba2/build/CMakeFiles --progress-num=7 "Built target SortingProject_autogen"
+.PHONY : CMakeFiles/SortingProject_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/SortingProject_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/petr/Documents/labs3sem/laba2/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SortingProject_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/petr/Documents/labs3sem/laba2/build/CMakeFiles 0
+.PHONY : CMakeFiles/SortingProject_autogen.dir/rule
+
+# Convenience name for target.
+SortingProject_autogen: CMakeFiles/SortingProject_autogen.dir/rule
+.PHONY : SortingProject_autogen
+
+# codegen rule for target.
+CMakeFiles/SortingProject_autogen.dir/codegen: CMakeFiles/SortingProject_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject_autogen.dir/build.make CMakeFiles/SortingProject_autogen.dir/codegen
+.PHONY : CMakeFiles/SortingProject_autogen.dir/codegen
+
+# clean rule for target.
+CMakeFiles/SortingProject_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject_autogen.dir/build.make CMakeFiles/SortingProject_autogen.dir/clean
+.PHONY : CMakeFiles/SortingProject_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/SortingTests_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+CMakeFiles/SortingTests_autogen_timestamp_deps.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingTests_autogen_timestamp_deps.dir/build.make CMakeFiles/SortingTests_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingTests_autogen_timestamp_deps.dir/build.make CMakeFiles/SortingTests_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/petr/Documents/labs3sem/laba2/build/CMakeFiles --progress-num= "Built target SortingTests_autogen_timestamp_deps"
+.PHONY : CMakeFiles/SortingTests_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/SortingTests_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/petr/Documents/labs3sem/laba2/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SortingTests_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/petr/Documents/labs3sem/laba2/build/CMakeFiles 0
+.PHONY : CMakeFiles/SortingTests_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+SortingTests_autogen_timestamp_deps: CMakeFiles/SortingTests_autogen_timestamp_deps.dir/rule
+.PHONY : SortingTests_autogen_timestamp_deps
+
+# codegen rule for target.
+CMakeFiles/SortingTests_autogen_timestamp_deps.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingTests_autogen_timestamp_deps.dir/build.make CMakeFiles/SortingTests_autogen_timestamp_deps.dir/codegen
+.PHONY : CMakeFiles/SortingTests_autogen_timestamp_deps.dir/codegen
+
+# clean rule for target.
+CMakeFiles/SortingTests_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingTests_autogen_timestamp_deps.dir/build.make CMakeFiles/SortingTests_autogen_timestamp_deps.dir/clean
+.PHONY : CMakeFiles/SortingTests_autogen_timestamp_deps.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/SortingTests_autogen.dir
 
 # All Build rule for target.
-CMakeFiles/SortingTests_autogen.dir/all:
+CMakeFiles/SortingTests_autogen.dir/all: CMakeFiles/SortingTests_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingTests_autogen.dir/build.make CMakeFiles/SortingTests_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingTests_autogen.dir/build.make CMakeFiles/SortingTests_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/petr/Documents/labs3sem/laba2/build/CMakeFiles --progress-num=11 "Built target SortingTests_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/petr/Documents/labs3sem/laba2/build/CMakeFiles --progress-num=13 "Built target SortingTests_autogen"
 .PHONY : CMakeFiles/SortingTests_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -198,7 +266,7 @@ SortingTests_autogen: CMakeFiles/SortingTests_autogen.dir/rule
 .PHONY : SortingTests_autogen
 
 # codegen rule for target.
-CMakeFiles/SortingTests_autogen.dir/codegen:
+CMakeFiles/SortingTests_autogen.dir/codegen: CMakeFiles/SortingTests_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingTests_autogen.dir/build.make CMakeFiles/SortingTests_autogen.dir/codegen
 .PHONY : CMakeFiles/SortingTests_autogen.dir/codegen
 

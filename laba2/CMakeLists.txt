@@ -1,38 +1,63 @@
-cmake_minimum_required(VERSION 3.16)
-project(SortingApplication)
+cmake_minimum_required(VERSION 3.10)
+project(SortingProject)
 
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Widgets Test)
 
-include_directories(
-    ${PROJECT_SOURCE_DIR}
-    ${PROJECT_SOURCE_DIR}/Sequence
-    ${PROJECT_SOURCE_DIR}/TypeOfSorts
-    ${PROJECT_SOURCE_DIR}/UI
-    ${PROJECT_SOURCE_DIR}/tests
-)
+find_package(Qt5 COMPONENTS Core Widgets Charts Test REQUIRED)
 
-set(SOURCES
+
+add_executable(SortingProject
     main.cpp
+    Person/Person.cpp
     UI/UI.cpp
-)
-
-set(HEADERS
     UI/UI.h
+    UI/UI.ui
+    Sequence/DynamicArray.h
+    Sequence/MutableSequence.h
+    TypeOfSorts/HeapSorter.h
+    TypeOfSorts/ISorter.h
+    TypeOfSorts/QuickSorter.h
+    TypeOfSorts/ShellSorter.h
 )
 
-add_executable(SortingApp ${SOURCES} ${HEADERS})
 
-target_link_libraries(SortingApp Qt6::Widgets)
+target_include_directories(SortingProject PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}/Person
+    ${CMAKE_CURRENT_SOURCE_DIR}/Sequence
+    ${CMAKE_CURRENT_SOURCE_DIR}/TypeOfSorts
+)
 
-set(TEST_SOURCES
+
+target_link_libraries(SortingProject Qt5::Core Qt5::Widgets Qt5::Charts)
+
+
+add_executable(SortingTests
     tests/SortingTests.cpp
+    tests/SortingTests.h
+    Person/Person.cpp
+    Sequence/DynamicArray.h
+    Sequence/MutableSequence.h
+    TypeOfSorts/HeapSorter.h
+    TypeOfSorts/ISorter.h
+    TypeOfSorts/QuickSorter.h
+    TypeOfSorts/ShellSorter.h
 )
 
-add_executable(SortingTests ${TEST_SOURCES})
 
-target_link_libraries(SortingTests Qt6::Test)
+target_include_directories(SortingTests PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}/Person
+    ${CMAKE_CURRENT_SOURCE_DIR}/Sequence
+    ${CMAKE_CURRENT_SOURCE_DIR}/TypeOfSorts
+)
+
+
+target_link_libraries(SortingTests Qt5::Test Qt5::Core)
+
+enable_testing()
+add_test(NAME SortingTests COMMAND SortingTests)

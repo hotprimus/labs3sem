@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SortingTests_autogen"
+  "SortingTests_autogen/include/UI/ui_UI.h"
   "SortingTests_autogen/mocs_compilation.cpp"
   "SortingTests_autogen/timestamp"
 )

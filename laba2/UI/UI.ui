@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>200</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,50 +16,119 @@
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QLineEdit" name="inputLineEdit">
-      <property name="placeholderText">
-       <string>Enter numbers separated by commas</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QComboBox" name="sorterComboBox">
+     <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <property name="text">
-        <string>Quick Sort</string>
-       </property>
+       <widget class="QPushButton" name="sortIntegersButton">
+        <property name="text">
+         <string>Сортировать целые числа</string>
+        </property>
+       </widget>
       </item>
       <item>
-       <property name="text">
-        <string>Heap Sort</string>
-       </property>
+       <widget class="QPushButton" name="sortIntegersReverseButton">
+        <property name="text">
+         <string>Сортировать целые числа в обратном порядке</string>
+        </property>
+       </widget>
       </item>
       <item>
-       <property name="text">
-        <string>Shell Sort</string>
-       </property>
+       <widget class="QPushButton" name="sortComplexButton">
+        <property name="text">
+         <string>Сортировать объекты Person</string>
+        </property>
+       </widget>
       </item>
-     </widget>
+     </layout>
     </item>
     <item>
-     <widget class="QPushButton" name="sortButton">
-      <property name="text">
-       <string>Sort</string>
-      </property>
-     </widget>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="selectFileButton">
+        <property name="text">
+         <string>Выбрать файл</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="fileLineEdit"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="sortFromFileButton">
+        <property name="text">
+         <string>Сортировать из файла</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="runBenchmarkButton">
+        <property name="text">
+         <string>Запустить бенчмарк</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
     <item>
-     <widget class="QLineEdit" name="outputLineEdit">
-      <property name="placeholderText">
-       <string>Sorted output will appear here</string>
-      </property>
-      <property name="readOnly">
-       <bool>true</bool>
-      </property>
-     </widget>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QTableWidget" name="integerTableWidget">
+        <property name="columnCount">
+         <number>1</number>
+        </property>
+        <property name="horizontalHeaderLabels">
+         <stringlist>
+          <string>Значение</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="reverseIntegerTableWidget">
+        <property name="columnCount">
+         <number>1</number>
+        </property>
+        <property name="horizontalHeaderLabels">
+         <stringlist>
+          <string>Значение (Обратная)</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="complexTableWidget">
+        <property name="columnCount">
+         <number>2</number>
+        </property>
+        <property name="horizontalHeaderLabels">
+         <stringlist>
+          <string>Имя</string>
+          <string>Возраст</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="fileSortTableWidget">
+        <property name="columnCount">
+         <number>2</number>
+        </property>
+        <property name="horizontalHeaderLabels">
+         <stringlist>
+          <string>Имя</string>
+          <string>Возраст</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QtCharts::QChartView" name="benchmarkChartView"/>
     </item>
    </layout>
   </widget>
+  <widget class="QMenuBar" name="menuBar"/>
+  <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <resources/>
  <connections/>

@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SortingTests_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/SortingTests_autogen.dir/ParseCache.txt"
   "SortingTests_autogen"
+  "CMakeFiles/SortingTests.dir/Person/Person.cpp.o"
+  "CMakeFiles/SortingTests.dir/Person/Person.cpp.o.d"
   "CMakeFiles/SortingTests.dir/SortingTests_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/SortingTests.dir/SortingTests_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/SortingTests.dir/tests/SortingTests.cpp.o"

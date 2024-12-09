@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file,CMakeFiles/SortingApp.dir/link.d CMakeFiles/SortingApp.dir/SortingApp_autogen/mocs_compilation.cpp.o CMakeFiles/SortingApp.dir/main.cpp.o CMakeFiles/SortingApp.dir/UI/UI.cpp.o -o SortingApp  /usr/lib/libQt6Widgets.so.6.8.0 /usr/lib/libQt6Gui.so.6.8.0 /usr/lib/libGLX.so /usr/lib/libOpenGL.so /usr/lib/libQt6Core.so.6.8.0

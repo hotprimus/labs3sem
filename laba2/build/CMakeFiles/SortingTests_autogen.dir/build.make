@@ -68,8 +68,8 @@ include CMakeFiles/SortingTests_autogen.dir/progress.make
 
 CMakeFiles/SortingTests_autogen: SortingTests_autogen/timestamp
 
-SortingTests_autogen/timestamp: /usr/lib/qt6/moc
-SortingTests_autogen/timestamp: /usr/lib/qt6/uic
+SortingTests_autogen/timestamp: /usr/bin/moc
+SortingTests_autogen/timestamp: /usr/bin/uic
 SortingTests_autogen/timestamp: CMakeFiles/SortingTests_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/petr/Documents/labs3sem/laba2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target SortingTests"
 	/usr/bin/cmake -E cmake_autogen /home/petr/Documents/labs3sem/laba2/build/CMakeFiles/SortingTests_autogen.dir/AutogenInfo.json ""

@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /home/petr/Documents/labs3sem/laba2/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -117,17 +127,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named SortingApp
+# Target rules for targets named SortingProject
 
 # Build rule for target.
-SortingApp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SortingApp
-.PHONY : SortingApp
+SortingProject: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SortingProject
+.PHONY : SortingProject
 
 # fast build rule for target.
-SortingApp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp.dir/build.make CMakeFiles/SortingApp.dir/build
-.PHONY : SortingApp/fast
+SortingProject/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject.dir/build.make CMakeFiles/SortingProject.dir/build
+.PHONY : SortingProject/fast
 
 #=============================================================================
 # Target rules for targets named SortingTests
@@ -143,17 +153,43 @@ SortingTests/fast:
 .PHONY : SortingTests/fast
 
 #=============================================================================
-# Target rules for targets named SortingApp_autogen
+# Target rules for targets named SortingProject_autogen_timestamp_deps
 
 # Build rule for target.
-SortingApp_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SortingApp_autogen
-.PHONY : SortingApp_autogen
+SortingProject_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SortingProject_autogen_timestamp_deps
+.PHONY : SortingProject_autogen_timestamp_deps
 
 # fast build rule for target.
-SortingApp_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp_autogen.dir/build.make CMakeFiles/SortingApp_autogen.dir/build
-.PHONY : SortingApp_autogen/fast
+SortingProject_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject_autogen_timestamp_deps.dir/build.make CMakeFiles/SortingProject_autogen_timestamp_deps.dir/build
+.PHONY : SortingProject_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named SortingProject_autogen
+
+# Build rule for target.
+SortingProject_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SortingProject_autogen
+.PHONY : SortingProject_autogen
+
+# fast build rule for target.
+SortingProject_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject_autogen.dir/build.make CMakeFiles/SortingProject_autogen.dir/build
+.PHONY : SortingProject_autogen/fast
+
+#=============================================================================
+# Target rules for targets named SortingTests_autogen_timestamp_deps
+
+# Build rule for target.
+SortingTests_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SortingTests_autogen_timestamp_deps
+.PHONY : SortingTests_autogen_timestamp_deps
+
+# fast build rule for target.
+SortingTests_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingTests_autogen_timestamp_deps.dir/build.make CMakeFiles/SortingTests_autogen_timestamp_deps.dir/build
+.PHONY : SortingTests_autogen_timestamp_deps/fast
 
 #=============================================================================
 # Target rules for targets named SortingTests_autogen
@@ -168,29 +204,56 @@ SortingTests_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingTests_autogen.dir/build.make CMakeFiles/SortingTests_autogen.dir/build
 .PHONY : SortingTests_autogen/fast
 
-SortingApp_autogen/mocs_compilation.o: SortingApp_autogen/mocs_compilation.cpp.o
-.PHONY : SortingApp_autogen/mocs_compilation.o
+Person/Person.o: Person/Person.cpp.o
+.PHONY : Person/Person.o
 
 # target to build an object file
-SortingApp_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp.dir/build.make CMakeFiles/SortingApp.dir/SortingApp_autogen/mocs_compilation.cpp.o
-.PHONY : SortingApp_autogen/mocs_compilation.cpp.o
+Person/Person.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject.dir/build.make CMakeFiles/SortingProject.dir/Person/Person.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingTests.dir/build.make CMakeFiles/SortingTests.dir/Person/Person.cpp.o
+.PHONY : Person/Person.cpp.o
 
-SortingApp_autogen/mocs_compilation.i: SortingApp_autogen/mocs_compilation.cpp.i
-.PHONY : SortingApp_autogen/mocs_compilation.i
+Person/Person.i: Person/Person.cpp.i
+.PHONY : Person/Person.i
 
 # target to preprocess a source file
-SortingApp_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp.dir/build.make CMakeFiles/SortingApp.dir/SortingApp_autogen/mocs_compilation.cpp.i
-.PHONY : SortingApp_autogen/mocs_compilation.cpp.i
+Person/Person.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject.dir/build.make CMakeFiles/SortingProject.dir/Person/Person.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingTests.dir/build.make CMakeFiles/SortingTests.dir/Person/Person.cpp.i
+.PHONY : Person/Person.cpp.i
 
-SortingApp_autogen/mocs_compilation.s: SortingApp_autogen/mocs_compilation.cpp.s
-.PHONY : SortingApp_autogen/mocs_compilation.s
+Person/Person.s: Person/Person.cpp.s
+.PHONY : Person/Person.s
 
 # target to generate assembly for a file
-SortingApp_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp.dir/build.make CMakeFiles/SortingApp.dir/SortingApp_autogen/mocs_compilation.cpp.s
-.PHONY : SortingApp_autogen/mocs_compilation.cpp.s
+Person/Person.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject.dir/build.make CMakeFiles/SortingProject.dir/Person/Person.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingTests.dir/build.make CMakeFiles/SortingTests.dir/Person/Person.cpp.s
+.PHONY : Person/Person.cpp.s
+
+SortingProject_autogen/mocs_compilation.o: SortingProject_autogen/mocs_compilation.cpp.o
+.PHONY : SortingProject_autogen/mocs_compilation.o
+
+# target to build an object file
+SortingProject_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject.dir/build.make CMakeFiles/SortingProject.dir/SortingProject_autogen/mocs_compilation.cpp.o
+.PHONY : SortingProject_autogen/mocs_compilation.cpp.o
+
+SortingProject_autogen/mocs_compilation.i: SortingProject_autogen/mocs_compilation.cpp.i
+.PHONY : SortingProject_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+SortingProject_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject.dir/build.make CMakeFiles/SortingProject.dir/SortingProject_autogen/mocs_compilation.cpp.i
+.PHONY : SortingProject_autogen/mocs_compilation.cpp.i
+
+SortingProject_autogen/mocs_compilation.s: SortingProject_autogen/mocs_compilation.cpp.s
+.PHONY : SortingProject_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+SortingProject_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject.dir/build.make CMakeFiles/SortingProject.dir/SortingProject_autogen/mocs_compilation.cpp.s
+.PHONY : SortingProject_autogen/mocs_compilation.cpp.s
 
 SortingTests_autogen/mocs_compilation.o: SortingTests_autogen/mocs_compilation.cpp.o
 .PHONY : SortingTests_autogen/mocs_compilation.o
@@ -221,7 +284,7 @@ UI/UI.o: UI/UI.cpp.o
 
 # target to build an object file
 UI/UI.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp.dir/build.make CMakeFiles/SortingApp.dir/UI/UI.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject.dir/build.make CMakeFiles/SortingProject.dir/UI/UI.cpp.o
 .PHONY : UI/UI.cpp.o
 
 UI/UI.i: UI/UI.cpp.i
@@ -229,7 +292,7 @@ UI/UI.i: UI/UI.cpp.i
 
 # target to preprocess a source file
 UI/UI.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp.dir/build.make CMakeFiles/SortingApp.dir/UI/UI.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject.dir/build.make CMakeFiles/SortingProject.dir/UI/UI.cpp.i
 .PHONY : UI/UI.cpp.i
 
 UI/UI.s: UI/UI.cpp.s
@@ -237,7 +300,7 @@ UI/UI.s: UI/UI.cpp.s
 
 # target to generate assembly for a file
 UI/UI.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp.dir/build.make CMakeFiles/SortingApp.dir/UI/UI.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject.dir/build.make CMakeFiles/SortingProject.dir/UI/UI.cpp.s
 .PHONY : UI/UI.cpp.s
 
 main.o: main.cpp.o
@@ -245,7 +308,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp.dir/build.make CMakeFiles/SortingApp.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject.dir/build.make CMakeFiles/SortingProject.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -253,7 +316,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp.dir/build.make CMakeFiles/SortingApp.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject.dir/build.make CMakeFiles/SortingProject.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -261,7 +324,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingApp.dir/build.make CMakeFiles/SortingApp.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SortingProject.dir/build.make CMakeFiles/SortingProject.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 tests/SortingTests.o: tests/SortingTests.cpp.o
@@ -296,13 +359,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... SortingApp_autogen"
+	@echo "... test"
+	@echo "... SortingProject_autogen"
+	@echo "... SortingProject_autogen_timestamp_deps"
 	@echo "... SortingTests_autogen"
-	@echo "... SortingApp"
+	@echo "... SortingTests_autogen_timestamp_deps"
+	@echo "... SortingProject"
 	@echo "... SortingTests"
-	@echo "... SortingApp_autogen/mocs_compilation.o"
-	@echo "... SortingApp_autogen/mocs_compilation.i"
-	@echo "... SortingApp_autogen/mocs_compilation.s"
+	@echo "... Person/Person.o"
+	@echo "... Person/Person.i"
+	@echo "... Person/Person.s"
+	@echo "... SortingProject_autogen/mocs_compilation.o"
+	@echo "... SortingProject_autogen/mocs_compilation.i"
+	@echo "... SortingProject_autogen/mocs_compilation.s"
 	@echo "... SortingTests_autogen/mocs_compilation.o"
 	@echo "... SortingTests_autogen/mocs_compilation.i"
 	@echo "... SortingTests_autogen/mocs_compilation.s"
