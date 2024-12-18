@@ -168,7 +168,7 @@ void UI::on_runBenchmarkButton_clicked()
     std::vector<std::pair<size_t, double>> heapData;
 
     // Проведение бенчмарка для разных размеров данных
-    for (size_t size = 1000; size <= 10000; size += 1000) {
+    for (size_t size = 1000; size <= 5000000; size += 500000) {
         // Создание случайных данных
         std::vector<int> dataVec(size);
         for (size_t i = 0; i < size; ++i) {
@@ -187,9 +187,7 @@ void UI::on_runBenchmarkButton_clicked()
             std::chrono::duration<double, std::milli> duration = end - start;
 
             shellData.emplace_back(size, duration.count());
-        }
-
-        // Быстрая сортировка
+        }// Быстрая сортировка
         {
             std::vector<int> data = dataVec; // Копируем данные
             auto start = std::chrono::high_resolution_clock::now();
@@ -221,6 +219,7 @@ void UI::on_runBenchmarkButton_clicked()
     // Обновление графика с новыми данными
     updateBenchmarkChart(shellData, quickData, heapData);
 }
+
 
 
 void UI::updateIntegerTable(const std::vector<int>& data)

@@ -1,0 +1,8 @@
+/home/petr/Documents/labs3sem/laba3/build/CMakeFiles/HistogramGenerator.dir
+/home/petr/Documents/labs3sem/laba3/build/CMakeFiles/Tests.dir
+/home/petr/Documents/labs3sem/laba3/build/CMakeFiles/edit_cache.dir
+/home/petr/Documents/labs3sem/laba3/build/CMakeFiles/rebuild_cache.dir
+/home/petr/Documents/labs3sem/laba3/build/CMakeFiles/HistogramGenerator_autogen_timestamp_deps.dir
+/home/petr/Documents/labs3sem/laba3/build/CMakeFiles/HistogramGenerator_autogen.dir
+/home/petr/Documents/labs3sem/laba3/build/CMakeFiles/Tests_autogen_timestamp_deps.dir
+/home/petr/Documents/labs3sem/laba3/build/CMakeFiles/Tests_autogen.dir
