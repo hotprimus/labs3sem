@@ -1,5 +1,4 @@
-#ifndef HISTOGRAMBUILDERTEST_H
-#define HISTOGRAMBUILDERTEST_H
+#pragma once
 
 #include <iostream>
 #include <cassert>
@@ -38,5 +37,3 @@ void runHistogramBuilderTests() {
 
     std::cout << "HistogramBuilder tests passed!" << std::endl;
 }
-
-#endif // HISTOGRAMBUILDERTEST_H

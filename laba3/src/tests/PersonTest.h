@@ -1,5 +1,4 @@
-#ifndef PERSONTEST_H
-#define PERSONTEST_H
+#pragma once
 
 #include <iostream>
 #include <cassert>
@@ -16,5 +15,3 @@ void runPersonTests() {
 
     std::cout << "Person tests passed!" << std::endl;
 }
-
-#endif // PERSONTEST_H

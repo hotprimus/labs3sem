@@ -188,5 +188,4 @@ CMakeFiles/Tests.dir/src/tests/main_tests.cpp.o: \
  /home/petr/Documents/labs3sem/laba3/src/tests/../Histogram.h \
  /usr/include/c++/14.2.1/utility \
  /usr/include/c++/14.2.1/bits/stl_relops.h \
- /home/petr/Documents/labs3sem/laba3/src/tests/../Utils.h \
- /home/petr/Documents/labs3sem/laba3/src/tests/../Person.h
+ /home/petr/Documents/labs3sem/laba3/src/tests/../Utils.h

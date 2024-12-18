@@ -1,5 +1,4 @@
-#ifndef HISTOGRAMBUILDER_H
-#define HISTOGRAMBUILDER_H
+#pragma once
 
 #include <vector>
 #include <map>
@@ -83,4 +82,4 @@ Histogram<T> HistogramBuilder<T>::build() {
     return Histogram<T>(histogramData);
 }
 
-#endif // HISTOGRAMBUILDER_H
+

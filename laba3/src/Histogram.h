@@ -1,5 +1,4 @@
-#ifndef HISTOGRAM_H
-#define HISTOGRAM_H
+#pragma once
 
 #include <vector>
 #include <map>
@@ -34,5 +33,3 @@ template <typename T>
 const std::map<typename Histogram<T>::Range, typename Histogram<T>::BinData>& Histogram<T>::getHistogram() const {
     return histogram_;
 }
-
-#endif // HISTOGRAM_H

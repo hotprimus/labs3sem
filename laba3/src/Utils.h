@@ -1,5 +1,4 @@
-#ifndef UTILS_H
-#define UTILS_H
+#pragma once
 
 #include <vector>
 #include <utility>
@@ -13,4 +12,3 @@ std::vector<Person> readPersonsFromCSV(const std::string& filePath);
 
 }
 
-#endif // UTILS_H

@@ -1,5 +1,4 @@
-#ifndef PERSON_H
-#define PERSON_H
+#pragma once
 
 #include <string>
 
@@ -17,4 +16,3 @@ private:
     double weight_;
 };
 
-#endif // PERSON_H
