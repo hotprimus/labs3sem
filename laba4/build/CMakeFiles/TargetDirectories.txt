@@ -1,0 +1,9 @@
+/home/petr/Documents/labs3sem/laba4/build/CMakeFiles/GraphAlgorithms.dir
+/home/petr/Documents/labs3sem/laba4/build/CMakeFiles/Tests.dir
+/home/petr/Documents/labs3sem/laba4/build/CMakeFiles/test.dir
+/home/petr/Documents/labs3sem/laba4/build/CMakeFiles/edit_cache.dir
+/home/petr/Documents/labs3sem/laba4/build/CMakeFiles/rebuild_cache.dir
+/home/petr/Documents/labs3sem/laba4/build/CMakeFiles/GraphAlgorithms_autogen_timestamp_deps.dir
+/home/petr/Documents/labs3sem/laba4/build/CMakeFiles/GraphAlgorithms_autogen.dir
+/home/petr/Documents/labs3sem/laba4/build/CMakeFiles/Tests_autogen_timestamp_deps.dir
+/home/petr/Documents/labs3sem/laba4/build/CMakeFiles/Tests_autogen.dir
