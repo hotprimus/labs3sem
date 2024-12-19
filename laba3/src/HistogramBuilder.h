@@ -45,26 +45,35 @@ HistogramBuilder<T>& HistogramBuilder<T>::setRanges(const std::vector<Range>& ra
 
 template <typename T>
 Histogram<T> HistogramBuilder<T>::build() {
-    std::map<Range, typename Histogram<T>::BinData> histogramData;
+    Histogram<T> histogram;
 
+    // Инициализация пустых диапазонов
     for (const auto& range : ranges_) {
-        histogramData[range] = typename Histogram<T>::BinData();
+        histogram.addBin(range, typename Histogram<T>::BinData{});
     }
 
+    // Распределение данных по диапазонам
     for (const auto& item : data_) {
         double value = criterion_(item);
+        bool found = false;
         for (const auto& range : ranges_) {
             if (value >= range.first && value < range.second) {
-                auto& binData = histogramData[range];
+                auto binData = histogram.getBinData(range);
                 binData.count++;
                 binData.values.push_back(value);
+                histogram.addBin(range, binData);
+                found = true;
                 break;
             }
         }
+        if (!found) {
+            // Значение не попало в диапазоны (можно обработать, если необходимо)
+        }
     }
 
-    for (auto& entry : histogramData) {
-        auto& binData = entry.second;
+    // Вычисление статистики для каждого диапазона
+    for (const auto& range : ranges_) {
+        auto binData = histogram.getBinData(range);
         size_t n = binData.values.size();
         if (n > 0) {
             double sum = std::accumulate(binData.values.begin(), binData.values.end(), 0.0);
@@ -73,13 +82,15 @@ Histogram<T> HistogramBuilder<T>::build() {
             double stdDev = std::sqrt(sq_sum / n - mean * mean);
             binData.mean = mean;
             binData.stdDev = stdDev;
+            histogram.addBin(range, binData);
         } else {
             binData.mean = 0.0;
             binData.stdDev = 0.0;
+            histogram.addBin(range, binData);
         }
     }
 
-    return Histogram<T>(histogramData);
+    return histogram;
 }
 
 

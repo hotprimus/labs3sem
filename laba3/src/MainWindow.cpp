@@ -130,7 +130,7 @@ void MainWindow::displayHistogram(const Histogram<Person> &histogram) {
     QStringList categories;
 
     int row = 0;
-    for (const auto& entry : histogram.getHistogram()) {
+    for (const auto& entry : histogram.getBins()) {
         const auto& range = entry.first;
         const auto& binData = entry.second;
 

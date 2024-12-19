@@ -7,6 +7,11 @@ namespace Utils {
 
 std::vector<std::pair<double, double>> createUniformRanges(double minValue, double maxValue, size_t numberOfRanges) {
     std::vector<std::pair<double, double>> ranges;
+
+    if (minValue >= maxValue || numberOfRanges == 0) {
+        return ranges; // Возвращаем пустой вектор
+    }
+
     double rangeSize = (maxValue - minValue) / numberOfRanges;
 
     for (size_t i = 0; i < numberOfRanges; ++i) {
