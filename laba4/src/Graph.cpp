@@ -1,7 +1,7 @@
 #include "Graph.h"
 #include <fstream>
 #include <sstream>
-#include <string> // Добавьте эту строку, если получаете ошибки в этом файле
+#include <string> 
 
 Graph::Graph(bool directed)
     : directed(directed) {}
